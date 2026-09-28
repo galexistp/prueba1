@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="web_standard" name="shell-type" />
+  <title>Supermercado Alem</title>
+  <link rel="icon" type="image/png" href="logo1.png" />
+  <link rel="shortcut icon" type="image/png" href="logo1.png" />
+  <link rel="apple-touch-icon" href="logo1.png" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <style>
+    @layer base {
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        overscroll-behavior: none;
+      }
+
+      main>:first-child {
+        margin-top: 0 !important;
+      }
+
+      main>:last-child {
+        margin-bottom: 0 !important;
+      }
+    }
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script
+    id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "error": "#ba1a1a", "on-secondary": "#ffffff", "tertiary": "#005a25", "surface-container-low": "#f2f4f6", "on-secondary-fixed": "#131b2e", "secondary-container": "#dae2fd", "on-tertiary-fixed": "#002109", "background": "#f7f9fb", "outline-variant": "#e5bdbb", "surface-container-high": "#e6e8ea", "on-error-container": "#93000a", "surface-container": "#eceef0", "primary-container": "#c8102e", "inverse-surface": "#2d3133", "surface-container-highest": "#e0e3e5", "on-secondary-container": "#5c647a", "primary": "#9e001f", "on-primary-fixed": "#410007", "on-surface": "#191c1e", "surface": "#f7f9fb", "surface-container-lowest": "#ffffff", "primary-fixed": "#ffdad8", "tertiary-fixed-dim": "#3de273", "surface-tint": "#bf0229", "on-tertiary": "#ffffff", "on-tertiary-fixed-variant": "#005322", "surface-variant": "#e0e3e5", "secondary-fixed-dim": "#bec6e0", "on-secondary-fixed-variant": "#3f465c", "on-surface-variant": "#5c403f", "on-primary-fixed-variant": "#92001c", "on-primary-container": "#ffdad8", "inverse-on-surface": "#eff1f3", "outline": "#906f6e", "error-container": "#ffdad6", "tertiary-container": "#007533", "surface-bright": "#f7f9fb", "tertiary-fixed": "#66ff8e", "on-error": "#ffffff", "primary-fixed-dim": "#ffb3b1", "on-background": "#191c1e", "secondary": "#565e74", "on-primary": "#ffffff", "on-tertiary-container": "#6bff91", "secondary-fixed": "#dae2fd", "surface-dim": "#d8dadc", "inverse-primary": "#ffb3b1" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-mobile": "1rem", "space-lg": "1.5rem", "margin": "2rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "gutter": "1.25rem", "space-xl": "2.5rem", "space-md": "1rem", "gutter-mobile": "0.75rem" }, "fontFamily": { "display-lg-mobile": ["Plus Jakarta Sans"], "label-tag": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "price-sm": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "price-xl": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"] }, "fontSize": { "display-lg-mobile": ["36px", { "lineHeight": "42px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "label-tag": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "800" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "700" }], "price-sm": ["20px", { "lineHeight": "24px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "700" }], "price-xl": ["32px", { "lineHeight": "36px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "700" }], "body-md": ["15px", { "lineHeight": "22px", "fontWeight": "400" }], "headline-xl-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "display-lg": ["52px", { "lineHeight": "60px", "letterSpacing": "-0.03em", "fontWeight": "800" }] } } } }</script>
+</head>
+
+<body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary selection:text-on-primary">
+  <header class="fixed top-0 left-0 right-0 z-50 bg-surface/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.06)]">
+    <div class="h-20 max-w-7xl mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-space-md">
+      <div class="flex items-center gap-space-md shrink-0"><a
+          class="flex items-center gap-space-sm group focus:outline-none" href="#hero"><img alt="Logo Supermercado Alem"
+            class="h-14 w-auto object-contain transition-transform group-hover:scale-105"
+            src="https://lh3.googleusercontent.com/aida/AEtjO1V0ZKUQxPFO1rACtlSdZzPWXXc09dIUUL8Yg2CkD4GJn4AVBb4959u3t_JduOe8Ew1pjuEWL_iqWXOf3hbLjgUPpP6dNc0BzQMkFXNKKI5Qk78WfXNnPjWTYqDDGZS3fgHH-7fGplqgdtbMzsqRJC-IllOSTxhHIpwT96gy2ycbqAAss5ZjN0fz6lbBgfzN598heNJkCZiUy0MvNN4e5e8KxJAOfHgkEjVq-4LTrMFNPFZDDb4MPo0FDBNj2QlGHJ6LmfR7Z6wSWQ" />
+          <div class="hidden sm:flex flex-col leading-tight"><span
+              class="font-headline-sm text-headline-sm uppercase tracking-tight text-primary">Supermercado
+              Alem</span><span class="font-label-tag text-label-tag text-on-surface-variant uppercase tracking-wider">Tu
+              comercio amigo</span></div>
+        </a></div>
+      <nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="text-primary font-label-lg"><a
+          aria-current="page" class="transition-colors py-space-xs text-primary font-label-lg" data-path="inicio"
+          href="#hero">Inicio</a><a
+          class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-space-xs"
+          data-path="ofertas" href="#ofertas">Ofertas</a><a
+          class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-space-xs"
+          data-path="categorias" href="#categorias">Categorías</a><a
+          class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-space-xs"
+          data-path="nosotros" href="#nosotros">Nosotros</a><a
+          class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-space-xs"
+          data-path="ubicacion" href="#ubicacion">Ubicación</a><a
+          class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-space-xs"
+          data-path="contacto" href="#contacto">Contacto</a></nav>
+      <div class="flex items-center gap-space-sm sm:gap-space-md"><a
+          class="inline-flex items-center justify-center bg-primary-container text-on-primary font-label-lg text-label-lg px-space-md py-2.5 rounded-lg shadow-sm hover:bg-primary transition-all active:scale-95"
+          href="#ofertas">Ver ofertas</a>
+        <div class="flex items-center pl-space-xs"><img alt="Profile"
+            class="w-8 h-8 rounded-full object-cover ring-2 ring-primary/20"
+            src="https://lh3.googleusercontent.com/aida/AEtjO1V0ZKUQxPFO1rACtlSdZzPWXXc09dIUUL8Yg2CkD4GJn4AVBb4959u3t_JduOe8Ew1pjuEWL_iqWXOf3hbLjgUPpP6dNc0BzQMkFXNKKI5Qk78WfXNnPjWTYqDDGZS3fgHH-7fGplqgdtbMzsqRJC-IllOSTxhHIpwT96gy2ycbqAAss5ZjN0fz6lbBgfzN598heNJkCZiUy0MvNN4e5e8KxJAOfHgkEjVq-4LTrMFNPFZDDb4MPo0FDBNj2QlGHJ6LmfR7Z6wSWQ" />
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]">
+    <div class="flex flex-col w-full">
+      <!-- 1. HERO / PORTADA (ID: "hero") -->
+      <section class="relative w-full overflow-hidden bg-surface-container-lowest" id="hero">
+        <!-- Atmospheric Ambient Visuals -->
+        <div class="absolute inset-0 z-0">
+          <div class="w-full h-full bg-cover bg-center"
+            data-alt="Modern spacious supermarket interior aisle with brightly lit grocery shelves, fresh colorful produce section in soft warm focus, clean reflective floor, and shopping cart in foreground, contemporary retail photography with warm accents."
+            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBjuQl-SloKAf_ZmSr3wa8ooONtGAcI3POMqTcdbBjK9y2TTkbitA91bAXbqNHNDO0HRRAH3nSL0m2jMFLnqn5iZ53LPL9ndzpxizq_QDEcGmOvUk9kLuyFvpsKLvStZ1NBrUhtCXFTOuGBpLOKen4M7scJcU4LhzYagphcPf3WEbaiWEl2efs5sY8gvQ76zFGRI27zIUfJ6uoLrXUZ6nPgZispbCdOGYUJJEuRYJ0wYJ9TROsiqMsK')">
+          </div>
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-surface-container-lowest via-surface-container-lowest/90 to-transparent lg:w-3/4">
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-margin-mobile lg:px-margin py-16 lg:py-24">
+          <div class="max-w-2xl flex flex-col items-start gap-space-lg">
+            <!-- Official Logo Presentation -->
+            <div
+              class="flex items-center gap-space-md p-space-sm pr-space-lg bg-surface-container-lowest/95 backdrop-blur-md rounded-xl shadow-md">
+              <img alt="Supermercado Alem Oficial" class="h-16 w-16 object-contain"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgniW7qjF409nJffFzh0VuvIuaPZc5wm48FKW4l8pgFE53I0ateGFifT_UkaPGdeHMeryKgUB9n3OdXY8zaqKyrFhydd5VFk6YUXA9dUeJlaiw7tzdmmwRBlfATo9BdFiE_wD3QDW6oXMzhsnDnlf7x7WxnQPmdlbSvynOvNmLJnFK9x61tods3it91xn6dN1qZxsv4poicBogDeunhoiMf3TzauIOVIKMk8Et9Eh9-U6YC-8Oew_tY66MkHSOVCeoSA" />
+              <div class="flex flex-col">
+                <span
+                  class="font-label-tag text-label-tag text-primary uppercase tracking-widest font-extrabold">Comercio
+                  Tradicional</span>
+                <span class="font-headline-sm text-headline-sm text-on-surface">Supermercado Alem</span>
+              </div>
+            </div>
+            <div class="space-y-space-sm">
+              <span
+                class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-md text-label-md uppercase tracking-wider">
+                <span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+                Precios bajos todos los días
+              </span>
+              <h1 class="font-display-lg text-display-lg text-on-surface tracking-tight leading-none text-balance">
+                Todo lo que necesitás, <span class="text-primary-container">en un solo lugar.</span>
+              </h1>
+              <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                Calidad, variedad y ofertas para que tus compras rindan más. Cuidamos la mesa familiar con la cercanía
+                de siempre.
+              </p>
+            </div>
+            <!-- Action CTAs -->
+            <div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+              <a class="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-lg bg-primary-container text-on-primary font-label-lg text-label-lg shadow-md hover:bg-primary transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0"
+                href="#ofertas">
+                <span class="material-symbols-outlined text-xl">local_offer</span>
+                Ver ofertas
+              </a>
+              <a class="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-lg bg-surface-container-high text-on-surface font-label-lg text-label-lg hover:bg-surface-container-highest transition-all duration-200"
+                href="#ubicacion">
+                <span class="material-symbols-outlined text-xl">near_me</span>
+                Cómo llegar
+              </a>
+            </div>
+            <!-- Trust Badges -->
+            <div class="pt-space-md flex flex-wrap gap-space-md items-center">
+              <div
+                class="flex items-center gap-2 px-3 py-2 rounded-lg bg-surface-container-low/90 backdrop-blur-sm shadow-sm">
+                <span class="material-symbols-outlined text-tertiary font-bold text-lg">check_circle</span>
+                <span class="font-label-md text-label-md text-on-surface">Ofertas todas las semanas</span>
+              </div>
+              <div
+                class="flex items-center gap-2 px-3 py-2 rounded-lg bg-surface-container-low/90 backdrop-blur-sm shadow-sm">
+                <span class="material-symbols-outlined text-tertiary font-bold text-lg">check_circle</span>
+                <span class="font-label-md text-label-md text-on-surface">Gran variedad y surtido</span>
+              </div>
+              <div
+                class="flex items-center gap-2 px-3 py-2 rounded-lg bg-surface-container-low/90 backdrop-blur-sm shadow-sm">
+                <span class="material-symbols-outlined text-tertiary font-bold text-lg">check_circle</span>
+                <span class="font-label-md text-label-md text-on-surface">Calidad y atención cercana</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 2. SECCIÓN OFERTAS (ID: "ofertas") -->
+      <section class="w-full py-20 bg-surface" id="ofertas">
+        <div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin flex flex-col gap-space-xl">
+          <!-- Section Header -->
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+            <div class="space-y-space-xs max-w-2xl">
+              <div class="flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-primary-container"></span>
+                <span class="font-label-tag text-label-tag text-primary-container uppercase tracking-wider">Ahorro
+                  garantizado</span>
+              </div>
+              <h2 class="font-headline-xl text-headline-xl text-on-surface">Ofertas que hacen rendir tu compra</h2>
+              <p class="font-body-lg text-body-lg text-on-surface-variant">Seleccionamos las mejores promociones de la
+                semana para cuidar tu bolsillo.</p>
+            </div>
+            <div class="shrink-0 flex items-center gap-2 bg-surface-container-low px-4 py-2 rounded-lg">
+              <span class="material-symbols-outlined text-primary text-xl">alarm</span>
+              <span class="font-label-md text-label-md text-on-surface">Válidas hasta agotar stock</span>
+            </div>
+          </div>
+          <!-- Offer Product Cards Grid (4 Units) -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+            <!-- Card 1: Carnes -->
+            <div
+              class="group flex flex-col justify-between bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+              <div class="relative w-full pt-[75%] bg-surface-container-low overflow-hidden">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+                  data-alt="Premium fresh butcher meat cut prime beef steak display on clean sanitary counter with rosemary garnish, studio culinary retail lighting with rich textures."
+                  style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDr68NTOPVfbcFd9plxAXNdEs4c4BkQoc8w1bPcQGGvfhxR0nZ3yAKgBZD57HgYT4V9Zb3HVFRqSenbBo7L5JjB2hzVy2nnm9H884XOzqiDFkvcRPmTWtMJ62gqWCX6qMrg1UbxWdLyK_z2eO6WYRvT6DzvULstPbefRsypZ6g5SAq3ZQoth4e7R12EBH-Kz5heBqnsHyBglsGWSQz8p65VTaHX0_RyOhK7RKGFG4XD-s2Hn2ymeJIA')">
+                </div>
+                <span
+                  class="absolute top-3 left-3 bg-primary-container text-on-primary font-label-tag text-label-tag px-2.5 py-1 rounded-md tracking-wider shadow-sm">OFERTA
+                  DE LA SEMANA</span>
+              </div>
+              <div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+                <div>
+                  <span class="font-label-tag text-label-tag text-on-surface-variant uppercase">Carnicería</span>
+                  <h3
+                    class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                    Carnes Seleccionadas</h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Cortes tiernos y frescos listos para
+                    tu asado o comidas cotidianas.</p>
+                </div>
+                <div class="space-y-space-sm pt-space-xs">
+                  <div class="flex items-baseline gap-2">
+                    <span class="font-price-xl text-price-xl text-primary-container">$ [PRECIO OFERTA]</span>
+                    <span class="font-body-sm text-body-sm line-through text-on-surface-variant">$ [PRECIO
+                      ANTERIOR]</span>
+                  </div>
+                  <a class="w-full py-2.5 px-4 rounded-lg bg-surface-container text-on-surface font-label-lg text-label-lg hover:bg-primary-container hover:text-on-primary transition-colors flex items-center justify-center gap-2"
+                    href="https://wa.me/543517720046?text=Hola!%20Quisiera%20consultar%20por%20los%20cortes%20en%20oferta"
+                    rel="noopener noreferrer" target="_blank">
+                    <span class="material-symbols-outlined text-lg">chat</span>
+                    Consultar cortes
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2: Frutas y Verduras -->
+            <div
+              class="group flex flex-col justify-between bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+              <div class="relative w-full pt-[75%] bg-surface-container-low overflow-hidden">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+                  data-alt="Vibrant fresh agricultural produce basket with juicy apples, ripe tomatoes, crisp greens, and seasonal fruits in natural morning grocery daylight."
+                  style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAO66yvIkANScRXikv0IW4ah8zKrmUOlMDZQ9MM7JosbInyLmNrU4ynbkHF4LgARgbr2DkOoFqjbDMdbRQQNh6JLGerRApvrMxpfpT7xRK65qOJl1hvyIXCPkMek-VpPqzrJWpndV6hzOTy1O_6DcQ9X6ZLuZI5i2pQ8rhnxdPot3QFPUl1wOaXfCVPWUIiUY9jtUrIOVDPvny6hw9QJuNge1lFxSLFFAUjPB8Oxe5n-iYRnFAr9CYv')">
+                </div>
+                <span
+                  class="absolute top-3 left-3 bg-tertiary-container text-on-tertiary font-label-tag text-label-tag px-2.5 py-1 rounded-md tracking-wider shadow-sm">SUPER
+                  OFERTA</span>
+              </div>
+              <div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+                <div>
+                  <span class="font-label-tag text-label-tag text-on-surface-variant uppercase">Verdulería</span>
+                  <h3
+                    class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                    Frutas y Verduras Frescas</h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Directo de chacras seleccionadas con
+                    reposición diaria continua.</p>
+                </div>
+                <div class="space-y-space-sm pt-space-xs">
+                  <div class="flex items-baseline gap-2">
+                    <span class="font-price-xl text-price-xl text-primary-container">$ [PRECIO OFERTA]</span>
+                    <span class="font-body-sm text-body-sm line-through text-on-surface-variant">$ [PRECIO
+                      ANTERIOR]</span>
+                  </div>
+                  <a class="w-full py-2.5 px-4 rounded-lg bg-surface-container text-on-surface font-label-lg text-label-lg hover:bg-primary-container hover:text-on-primary transition-colors flex items-center justify-center gap-2"
+                    href="#contacto">
+                    <span class="material-symbols-outlined text-lg">visibility</span>
+                    Ver más
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 3: Almacén -->
+            <div
+              class="group flex flex-col justify-between bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+              <div class="relative w-full pt-[75%] bg-surface-container-low overflow-hidden">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+                  data-alt="Pantry essential grocery supplies pasta packages, canned sauces, premium cooking oils, and cereals organized neatly in modern supermarket lighting."
+                  style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDiYoPdRLDLFkurT2IiwONHF0K8LRA1VOrcsRuWdCK1yY8C5T-ZQj03UzY_ifk0YvSnD0XcHE3g5vNnAhbLCeyDYvKzTdumvB9-j6j4Yp6axKuRGgIFAhSPfj95VoMej7Eqn_qJa_Kgc4K38Sb6aTkxslpOqerpThXsgWLItMm7Ot2uPFzZM6mi2y3Hp9np4l1iUulzIVZyapi579TVHcfsagDNq5Lzkwwh0sSDJAH8wDNSxU1FkFpq')">
+                </div>
+                <span
+                  class="absolute top-3 left-3 bg-primary-container text-on-primary font-label-tag text-label-tag px-2.5 py-1 rounded-md tracking-wider shadow-sm">OFERTA
+                  DESTACADA</span>
+              </div>
+              <div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+                <div>
+                  <span class="font-label-tag text-label-tag text-on-surface-variant uppercase">Almacén</span>
+                  <h3
+                    class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                    Almacén y Despensa</h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Marcas líderes para surtir la
+                    alacena al menor costo del barrio.</p>
+                </div>
+                <div class="space-y-space-sm pt-space-xs">
+                  <div class="flex items-baseline gap-2">
+                    <span class="font-price-xl text-price-xl text-primary-container">$ [PRECIO OFERTA]</span>
+                    <span class="font-body-sm text-body-sm line-through text-on-surface-variant">$ [PRECIO
+                      ANTERIOR]</span>
+                  </div>
+                  <a class="w-full py-2.5 px-4 rounded-lg bg-surface-container text-on-surface font-label-lg text-label-lg hover:bg-primary-container hover:text-on-primary transition-colors flex items-center justify-center gap-2"
+                    href="#contacto">
+                    <span class="material-symbols-outlined text-lg">visibility</span>
+                    Ver más
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 4: Limpieza -->
+            <div
+              class="group flex flex-col justify-between bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+              <div class="relative w-full pt-[75%] bg-surface-container-low overflow-hidden">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+                  data-alt="Assortment of household cleaning liquid detergents, fabric softeners, and surface disinfectant sprays in bright crisp clean environment."
+                  style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCv4copVLauPfI_2_XUtr0cRp8qd9YYBHg3xXT5Vp3FFBhO3eeYfEmJTY8efwEatGpZXcec38P9vDEAU-b36pzs6RN4ub335lEjz1BxDaTJDvVQfKjjiadOJXPI7MkSCYQfx-yB57o3qBcpO77hZ3tHgTBIgjLekIjpz6chIKHB2z7atOdPE621ixN-EH65sxR2hgHp96dTv0JxbDFKeTuQr9uXeEhWlLoHNhmDBjpURbSnksdik9z9')">
+                </div>
+                <span
+                  class="absolute top-3 left-3 bg-secondary text-on-secondary font-label-tag text-label-tag px-2.5 py-1 rounded-md tracking-wider shadow-sm">PROMO
+                  SEMANAL</span>
+              </div>
+              <div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+                <div>
+                  <span class="font-label-tag text-label-tag text-on-surface-variant uppercase">Hogar</span>
+                  <h3
+                    class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                    Artículos de Limpieza</h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Combo de máxima desinfección y
+                    brillo para cuidar todo tu hogar.</p>
+                </div>
+                <div class="space-y-space-sm pt-space-xs">
+                  <div class="flex items-baseline gap-2">
+                    <span class="font-price-xl text-price-xl text-primary-container">$ [PRECIO OFERTA]</span>
+                    <span class="font-body-sm text-body-sm line-through text-on-surface-variant">$ [PRECIO
+                      ANTERIOR]</span>
+                  </div>
+                  <a class="w-full py-2.5 px-4 rounded-lg bg-surface-container text-on-surface font-label-lg text-label-lg hover:bg-primary-container hover:text-on-primary transition-colors flex items-center justify-center gap-2"
+                    href="#contacto">
+                    <span class="material-symbols-outlined text-lg">visibility</span>
+                    Ver más
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Central Social Offers CTA -->
+          <div
+            class="w-full bg-surface-container-low rounded-2xl p-space-lg lg:p-space-xl flex flex-col sm:flex-row items-center justify-between gap-space-md shadow-sm">
+            <div class="flex items-center gap-space-md">
+              <div
+                class="w-14 h-14 rounded-full bg-primary-container text-on-primary flex items-center justify-center shrink-0 shadow-md">
+                <span class="material-symbols-outlined text-3xl">campaign</span>
+              </div>
+              <div>
+                <h4 class="font-headline-sm text-headline-sm text-on-surface">¿Querés conocer el folleto completo?</h4>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">Actualizadas semana a semana en nuestras
+                  redes oficiales.</p>
+              </div>
+            </div>
+            <a class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary-container text-on-primary font-label-lg text-label-lg hover:bg-primary transition-all duration-200 shadow-md hover:scale-105 active:scale-100"
+              href="https://www.instagram.com/superalem1/" rel="noopener noreferrer" target="_blank">
+              <span class="material-symbols-outlined">photo_camera</span>
+              Ver todas las ofertas en nuestro Instagram
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- 3. SECCIÓN CATEGORÍAS (ID: "categorias") -->
+      <section class="w-full py-20 bg-surface-container-lowest" id="categorias">
+        <div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin flex flex-col gap-space-xl">
+          <!-- Section Header -->
+          <div class="text-center max-w-3xl mx-auto space-y-space-xs">
+            <span class="font-label-tag text-label-tag text-primary uppercase tracking-widest font-extrabold">Sectores y
+              Rubros</span>
+            <h2 class="font-headline-xl text-headline-xl text-on-surface">Todo lo que buscás para tu día a día</h2>
+            <p class="font-body-lg text-body-lg text-on-surface-variant">Recorré nuestros sectores y descubrí la
+              variedad de productos que tenemos preparados para vos.</p>
+          </div>
+          <!-- 8 Categories Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+            <!-- 1. Carnicería -->
+            <div
+              class="group relative rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 bg-surface-container-low flex flex-col">
+              <div class="relative h-48 w-full overflow-hidden">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                  data-alt="Traditional butcher shop meat cuts counter with prime beef steaks, sausages, and clean hygienic cutting boards in bright supermarket light."
+                  style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD8Nrk0h_oVMpR0LqxxcGG6Hy7JQgMMQNb5hkZf1ShXfinF6dlIttsuiBIpmeokRO6NG_qZmI6vQt2W_5XU16t6kFU80eS5j7-xzGHYpvrXeidHgiU7X77oCiNjErYrsHzLEC5bQKz1amC6mA2oxKNSBB0coxtn-K9slGLKMOB_nvz-njQeDhpVK8_xtnKGh5n9WoovLJAMy0OlMANY6SK7SKWMu0kijU3Qif56JzovLX77ClD1q41P')">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent"></div>
+                <span class="absolute bottom-3 left-3 text-2xl">🥩</span>
+              </div>
+              <div class="p-space-md flex flex-col justify-between flex-1">
+                <div>
+                  <h3
+                    class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                    Carnicería</h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Cortes seleccionados para todos los
+                    días.</p>
+                </div>
+                <div class="pt-3 flex items-center text-primary font-label-md text-label-md">
+                  <span>Ver sector</span>
+                  <span
+                    class="material-symbols-outlined text-sm ml-1 transition-transform group-hover:translate-x-1">arrow_forward</span>
+                </div>
+              </div>
+            </div>
+            <!-- 2. Frutas y Verduras -->
+            <div
+              class="group relative rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 bg-surface-container-low flex flex-col">
+              <div class="relative h-48 w-full overflow-hidden">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                  data-alt="Fresh colorful greengrocer display with crisp lettuce, ripe red apples, citrus fruits, and fresh carrots neatly arrayed in wooden crates."
+                  style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCy8hkDQrd7AuVCNpNOo-T4tgGj4Nl1pvRi7ZODOQgqieJ68ruGxR3H8psoPtTlCILs7temttBxmzG9Kh2VIp1PoQopODZ-VDGyzjfuNT4scVnVyFI1Vjt0GbWiOn8Gyw_8bIjpJGMPAkeg2Ro5WUCvvat2GtcqMpdBfRYjmRHLTfhiwTmKTD2rkIZqQoBgUlkmdcXmvNkQYUOUxBj5Dv3cZMAyygpU29bVpOUNdKI0Qxll-y-FvODM')">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent"></div>
+                <span class="absolute bottom-3 left-3 text-2xl">🍎</span>
+              </div>
+              <div class="p-space-md flex flex-col justify-between flex-1">
+                <div>
+                  <h3
+                    class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                    Frutas y Verduras</h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Frescura directa del productor a tu
+                    mesa.</p>
+                </div>
+                <div class="pt-3 flex items-center text-primary font-label-md text-label-md">
+                  <span>Ver sector</span>
+                  <span
+                    class="material-symbols-outlined text-sm ml-1 transition-transform group-hover:translate-x-1">arrow_forward</span>
+                </div>
+              </div>
+            </div>
+            <!-- 3. Almacén -->
+            <div
+              class="group relative rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 bg-surface-container-low flex flex-col">
+              <div class="relative h-48 w-full overflow-hidden">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                  data-alt="Grocery pantry aisle shelves with oils, grains, canned goods, spices, and pasta varieties meticulously arranged in neat aisles."
+                  style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCXYQrolchs4hsipN-vJHgwe_AFxvFRAY-zBfeugdIcN74KGuyOvDxUrm65eA0L_iLYjd6BbmOigoF6C2W88NpFnppaH98uyXXEn8ZmufAyg8UKB4fw9f8QL5XF_VKzQnYtZdVges1jOwd7XvmhLkMrDAJB97rk2IQS8KD-8Bav71GZrlaNot6T1H96GMfE_WbUO43xnMrD-o7Y_Ouvn9snCA9fjR8sPAIjxhpCiH9c6ARdaPwrYgWc')">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent"></div>
+                <span class="absolute bottom-3 left-3 text-2xl">🥫</span>
+              </div>
+              <div class="p-space-md flex flex-col justify-between flex-1">
+                <div>
+                  <h3
+                    class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                    Almacén</h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Las mejores marcas para surtir tu
+                    despensa.</p>
+                </div>
+                <div class="pt-3 flex items-center text-primary font-label-md text-label-md">
+                  <span>Ver sector</span>
+                  <span
+                    class="material-symbols-outlined text-sm ml-1 transition-transform group-hover:translate-x-1">arrow_forward</span>
+                </div>
+              </div>
+            </div>
+            <!-- 4. Limpieza -->
+            <div
+              class="group relative rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 bg-surface-container-low flex flex-col">
+              <div class="relative h-48 w-full overflow-hidden">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                  data-alt="Bright clean household care supplies shelf with soap dispensers, concentrated detergents, and multi-surface disinfectants."
+                  style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCCwRbJxKqUxhrRPmb7W2U7BrZfHlJsmWP1BxGaDyOfQm9p6Zt3E_AvypWi-jldkIUHvBmyTVR1XPRuDqV_Rh6aUQVWR1IWaogMZzB1SM9xUcS-8VDaE5EUd9E-PeMFs2KoSvHw20JptuNKSUq-7in9f9TSbqf2fZfunw4C-eedNoDe6MuifcjX0Nj9_3vAyNF5ZS3ROk8CX0amJ51NF9o2Z1wO2xUj-XpuhFAmekJ1C8nXgC5ZmMph')">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent"></div>
+                <span class="absolute bottom-3 left-3 text-2xl">🧹</span>
+              </div>
+              <div class="p-space-md flex flex-col justify-between flex-1">
+                <div>
+                  <h3
+                    class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                    Limpieza</h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Efectividad y rendimiento para el
+                    cuidado de tu hogar.</p>
+                </div>
+                <div class="pt-3 flex items-center text-primary font-label-md text-label-md">
+                  <span>Ver sector</span>
+                  <span
+                    class="material-symbols-outlined text-sm ml-1 transition-transform group-hover:translate-x-1">arrow_forward</span>
+                </div>
+              </div>
+            </div>
+            <!-- 5. Perfumería -->
+            <div
+              class="group relative rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 bg-surface-container-low flex flex-col">
+              <div class="relative h-48 w-full overflow-hidden">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                  data-alt="Personal hygiene and cosmetic shelves with shampoos, bath soaps, toothpastes, and skincare bottles in clean contemporary setting."
+                  style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDOwcBnsj_s_KMlbBrDbpyNSmG8gqk-zhCpSH54MsCr8xhNOawr_PYBqPvzsng7DRLt90_re9UtHnHvQpRwSkPkL-72SUOax7605lpufn259AgLgh__3Zdc0qHRWaFX0n8qQYo0rEO6IN8Z_7-1RT7WpXmOgw_pvVGx2udecT5yY0a87jbZrR8u2GVCgrjP8_xA-ex1rlP-G8ZYDfX2n26dt3hE629pG0WeBqSj-LpbUkZ7Vvx6aZuK')">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent"></div>
+                <span class="absolute bottom-3 left-3 text-2xl">🧴</span>
+              </div>
+              <div class="p-space-md flex flex-col justify-between flex-1">
+                <div>
+                  <h3
+                    class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                    Perfumería</h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Higiene y cuidado personal para toda
+                    la familia.</p>
+                </div>
+                <div class="pt-3 flex items-center text-primary font-label-md text-label-md">
+                  <span>Ver sector</span>
+                  <span
+                    class="material-symbols-outlined text-sm ml-1 transition-transform group-hover:translate-x-1">arrow_forward</span>
+                </div>
+              </div>
+            </div>
+            <!-- 6. Lácteos y Frescos -->
+            <div
+              class="group relative rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 bg-surface-container-low flex flex-col">
+              <div class="relative h-48 w-full overflow-hidden">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                  data-alt="Refrigerated grocery shelves with fresh dairy products, bottles of milk, artisanal cheeses, yogurts, and deli cold cuts in cool blue-white tone."
+                  style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDAMoi8SB4bLf1fkUarJzUIAuprPXbowSGb31ctuOGo2jUYedg0pGAUK51yeB3gLWoLlsq3NrFSPiuUqSyrugeVLJsQPR1psrPGlVJvifB7trBvems5SS075kwExqBITZmuspoL1yTCtndn3AbHsA3nRw_giwIPU6YWggK7e64LdxyzsXt90NKsGkSSwpAXg4_2ByRhmjmSbyCMje8Jy4Wde-YvMR0jwpXejtrvkSBgPL_6OStOwcRV')">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent"></div>
+                <span class="absolute bottom-3 left-3 text-2xl">🥛</span>
+              </div>
+              <div class="p-space-md flex flex-col justify-between flex-1">
+                <div>
+                  <h3
+                    class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                    Lácteos y Frescos</h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Leches, quesos y fiambres siempre
+                    frescos.</p>
+                </div>
+                <div class="pt-3 flex items-center text-primary font-label-md text-label-md">
+                  <span>Ver sector</span>
+                  <span
+                    class="material-symbols-outlined text-sm ml-1 transition-transform group-hover:translate-x-1">arrow_forward</span>
+                </div>
+              </div>
+            </div>
+            <!-- 7. Panificados -->
+            <div
+              class="group relative rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 bg-surface-container-low flex flex-col">
+              <div class="relative h-48 w-full overflow-hidden">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                  data-alt="Freshly baked artisan bread display, golden baguettes, crusty loaves, and croissants on bakery shelf in warm glowing ambiance."
+                  style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD297UsKIX-R6LTcEqBOuzJaLM7Iz7tQ38C8VvFy9pjIsu9OFaC1fR6Fv2oco4ZFSQ03fT3Z4MqlNOg0iv6e5by_edaqD67g_46rd_t86eTJbMTCdESvrEmT9r70djTwHME06ZHbxciyhdbuLJPGHeel_MDXoE6Zi8BDCxVr6I-4GzkkOKtQ94Z_eQ3PRLo6T50Hq9gBpYCBs_wGCsL7VDBIq6ke2TBkuK5l9iU1Nw_amzv1JSxniOK')">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent"></div>
+                <span class="absolute bottom-3 left-3 text-2xl">🥖</span>
+              </div>
+              <div class="p-space-md flex flex-col justify-between flex-1">
+                <div>
+                  <h3
+                    class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                    Panificados</h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Elaboraciones frescas y crocantes
+                    cada jornada.</p>
+                </div>
+                <div class="pt-3 flex items-center text-primary font-label-md text-label-md">
+                  <span>Ver sector</span>
+                  <span
+                    class="material-symbols-outlined text-sm ml-1 transition-transform group-hover:translate-x-1">arrow_forward</span>
+                </div>
+              </div>
+            </div>
+            <!-- 8. Bebidas -->
+            <div
+              class="group relative rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 bg-surface-container-low flex flex-col">
+              <div class="relative h-48 w-full overflow-hidden">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                  data-alt="Supermarket beverage department shelves loaded with mineral waters, sodas, juices, and regional Argentine wine bottles in clean modern layout."
+                  style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA_TojBdvxXFQ8mMCiFffYOEUTnAHZXTrPenBnNJdmX6FuL1ttRrog3YVsXcR6O8fVKw6KZkX-3CMqnecQT5vqymVhbE3PMkhnceYgbcXSeXyAbgZrnIsc4iATvVtLB-03nkWJD6uDwbh5m0EnRFejU-Ixb-HNxMwrJNoNwS2bXXwzl6jYpNQ1o5wG3UKc2nWjMDrgZuEYqU7PpwZq3dKZsFbUzHAL9QGmRbynpeL7GRkBqB41usxf0')">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent"></div>
+                <span class="absolute bottom-3 left-3 text-2xl">🥤</span>
+              </div>
+              <div class="p-space-md flex flex-col justify-between flex-1">
+                <div>
+                  <h3
+                    class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                    Bebidas</h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Aguas, gaseosas, jugos y vinos al
+                    mejor precio.</p>
+                </div>
+                <div class="pt-3 flex items-center text-primary font-label-md text-label-md">
+                  <span>Ver sector</span>
+                  <span
+                    class="material-symbols-outlined text-sm ml-1 transition-transform group-hover:translate-x-1">arrow_forward</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 4. SECCIÓN DIFERENCIALES (ID: "nosotros") -->
+      <section class="w-full py-20 bg-surface-container" id="nosotros">
+        <div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin flex flex-col gap-space-xl">
+          <!-- Section Header -->
+          <div class="max-w-3xl space-y-space-xs">
+            <span class="font-label-tag text-label-tag text-primary uppercase tracking-widest font-extrabold">Nuestros
+              Valores</span>
+            <h2 class="font-headline-xl text-headline-xl text-on-surface">Comprar en Alem es elegir más</h2>
+            <p class="font-body-lg text-body-lg text-on-surface-variant">El valor de elegir un supermercado completo,
+              con la cercanía y calidez de siempre.</p>
+          </div>
+          <!-- 5 Benefit Blocks with Clean SVG Icons -->
+          <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-gutter">
+            <!-- Differencial 1: Variedad -->
+            <div
+              class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm hover:shadow-md transition-shadow">
+              <div
+                class="w-12 h-12 rounded-lg bg-primary-fixed flex items-center justify-center text-primary-container">
+                <svg class="w-6 h-6 fill-current" viewbox="0 0 24 24">
+                  <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+                </svg>
+              </div>
+              <h3 class="font-headline-sm text-headline-sm text-on-surface">Variedad</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">Encontrá todo en un solo lugar sin tener que
+                dar vueltas.</p>
+            </div>
+            <!-- Differencial 2: Calidad -->
+            <div
+              class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm hover:shadow-md transition-shadow">
+              <div class="w-12 h-12 rounded-lg bg-tertiary-fixed flex items-center justify-center text-tertiary">
+                <svg class="w-6 h-6 fill-current" viewbox="0 0 24 24">
+                  <path
+                    d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z">
+                  </path>
+                </svg>
+              </div>
+              <h3 class="font-headline-sm text-headline-sm text-on-surface">Calidad</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">Productos seleccionados rigurosamente para tu
+                mesa.</p>
+            </div>
+            <!-- Differencial 3: Ofertas -->
+            <div
+              class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm hover:shadow-md transition-shadow">
+              <div
+                class="w-12 h-12 rounded-lg bg-primary-fixed flex items-center justify-center text-primary-container">
+                <svg class="w-6 h-6 fill-current" viewbox="0 0 24 24">
+                  <path
+                    d="M21.41 11.58l-9-9C12.05 2.22 11.55 2 11 2H4c-1.1 0-2 .9-2 2v7c0 .55.22 1.05.59 1.42l9 9c.36.36.86.58 1.41.58.55 0 1.05-.22 1.41-.59l7-7c.37-.36.59-.86.59-1.41 0-.55-.23-1.06-.59-1.42zM5.5 7C4.67 7 4 6.33 4 5.5S4.67 4 5.5 4 7 4.67 7 5.5 6.33 7 5.5 7z">
+                  </path>
+                </svg>
+              </div>
+              <h3 class="font-headline-sm text-headline-sm text-on-surface">Ofertas</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">Promociones pensadas día tras día para que
+                ahorres.</p>
+            </div>
+            <!-- Differencial 4: Cercanía -->
+            <div
+              class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm hover:shadow-md transition-shadow">
+              <div
+                class="w-12 h-12 rounded-lg bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+                <svg class="w-6 h-6 fill-current" viewbox="0 0 24 24">
+                  <path
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z">
+                  </path>
+                </svg>
+              </div>
+              <h3 class="font-headline-sm text-headline-sm text-on-surface">Cercanía</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">Un supermercado pensado para nuestra querida
+                comunidad.</p>
+            </div>
+            <!-- Differencial 5: Experiencia -->
+            <div
+              class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm hover:shadow-md transition-shadow">
+              <div
+                class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container">
+                <svg class="w-6 h-6 fill-current" viewbox="0 0 24 24">
+                  <path
+                    d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z">
+                  </path>
+                </svg>
+              </div>
+              <h3 class="font-headline-sm text-headline-sm text-on-surface">Experiencia</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">Todo lo que necesitás para hacer tus compras
+                más fácil.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 5. SECCIÓN BRAND STORY (VISUAL FULL-WIDTH) -->
+      <section class="relative w-full py-28 overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center"
+          data-alt="Warm welcoming supermarket corridor featuring happy family shopping together, friendly cashiers interacting with neighbors in clean spacious grocery aisles with inviting natural lighting."
+          style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBSgNZ0uKVISDu2gZSWqrO_lrglcA8xFYCGV-3qGyA_HSiUaNOCLfSwMR5Yux7JpmE2tSQt5ajxm0x0L0L1x7ZikBndPQXwmGosrouGwevJrUKauBhteMxps2ejxb-dWdXidZey-Z5qrPCcB1rzZn-lngcPQyP3qhDTM9B0zTNa_0-2K2k6mRF8KOV5ln-YziZCgo2Y999NmhVkmO0Ca6uCZF_MWi9QXMJ7sGhgbru5vTb8C3bMQLr6')">
+        </div>
+        <div class="absolute inset-0 bg-inverse-surface/75 backdrop-blur-[2px]"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-margin-mobile lg:px-margin">
+          <div
+            class="max-w-2xl bg-surface-container-lowest/95 backdrop-blur-md p-8 lg:p-12 rounded-2xl shadow-2xl flex flex-col gap-space-md">
+            <div class="flex items-center gap-space-sm">
+              <img alt="Emblema Supermercado Alem" class="h-10 w-10 object-contain"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZgHlkb2i8yjs6ynX2czUaO-EhzMCYbx75cXDnWf_65ybMNkMRdWgId4GIk6bSWbJ6UxAngcBBea3CparoYYgiIR5e8VJuoGJDmLtlWM-svvD0yxctqOALIDmyf-CK_ThoOSD_lBeAAJtecW5mHL7kuIda3qlvSfpN-nHEqu7TKfLZTrkcNk9Z68sCERVC-5AO-ZiGpQyCQqKCFtzIfKNwBtMkAGj54VG5cjpkPyAj5d29rKMxXxd_asXzaiN8dsLJHw" />
+              <span class="font-label-tag text-label-tag text-primary font-bold uppercase tracking-widest">Nuestra
+                Promesa</span>
+            </div>
+            <h2 class="font-headline-xl text-headline-xl text-on-surface leading-tight">Tu compra de todos los días</h2>
+            <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+              En Supermercado Alem trabajamos para ofrecerte variedad, calidad y buenos precios en un solo lugar. Más
+              que un supermercado, somos parte de tu día a día, acompañando el crecimiento y bienestar de cada hogar.
+            </p>
+            <div class="pt-2 flex items-center gap-space-md">
+              <a class="font-label-lg text-label-lg text-primary-container hover:text-primary flex items-center gap-1 group"
+                href="#ofertas">
+                Conocé nuestras ofertas de la semana
+                <span
+                  class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 6. SECCIÓN INSTAGRAM (ID: "instagram") -->
+      <section class="w-full py-20 bg-surface" id="instagram">
+        <div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin flex flex-col gap-space-xl">
+          <!-- Section Header -->
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+            <div class="space-y-space-xs max-w-xl">
+              <span
+                class="font-label-tag text-label-tag text-primary uppercase tracking-widest font-extrabold">Comunidad
+                Digital</span>
+              <h2 class="font-headline-xl text-headline-xl text-on-surface">Seguinos en Instagram</h2>
+              <p class="font-body-lg text-body-lg text-on-surface-variant">Enterate primero de nuestras ofertas,
+                promociones y novedades.</p>
+            </div>
+            <a class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-surface-container-high text-on-surface font-label-lg text-label-lg hover:bg-primary-container hover:text-on-primary transition-all duration-200"
+              href="https://www.instagram.com/superalem1/" rel="noopener noreferrer" target="_blank">
+              <svg class="w-5 h-5 fill-current" viewbox="0 0 24 24">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.13-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z">
+                </path>
+              </svg>
+              @superalem1
+            </a>
+          </div>
+          <!-- 6 Social Grid Posts -->
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-gutter">
+            <!-- Post 1 -->
+            <a class="group relative rounded-xl overflow-hidden aspect-square shadow-sm bg-surface-container-low"
+              href="https://www.instagram.com/superalem1/" rel="noopener noreferrer" target="_blank">
+              <div class="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-110"
+                data-alt="Instagram retail post showing weekly specials on farm fresh vegetables with price tags in modern Argentine supermarket format."
+                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCwdlAnLumBssprvyUaG3UTL4o0c_466RhL5grKa_jt-9usFwW_9bOVp_wcOCClwrPPaPMWMXXsiNG1WpgjpjzZl3yC026GTYn2JAnNn92O3BTfa2raCV4WtAE7ugfnppndpZox1KN_c2cR0HFwheUMIRloD-cX1YoOLrfG1n7RquZdT5A0G5rfevhRMKMH_-Yhc9beSL0yOuugpYMLSgx8LupuEqeUBggV1wBHD6yQ7kplnxVfVzKy')">
+              </div>
+              <div
+                class="absolute inset-0 bg-on-surface/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-center justify-center gap-3 text-on-primary">
+                <span class="flex items-center gap-1 font-label-md text-label-md"><span
+                    class="material-symbols-outlined text-sm">favorite</span> 142</span>
+                <span class="flex items-center gap-1 font-label-md text-label-md"><span
+                    class="material-symbols-outlined text-sm">chat_bubble</span> 18</span>
+              </div>
+            </a>
+            <!-- Post 2 -->
+            <a class="group relative rounded-xl overflow-hidden aspect-square shadow-sm bg-surface-container-low"
+              href="https://www.instagram.com/superalem1/" rel="noopener noreferrer" target="_blank">
+              <div class="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-110"
+                data-alt="Artisanal bakery fresh bread loaves straight from the oven shown on modern supermarket wooden trays with steam rising."
+                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAQkZ-QONr9IsH2B_tdYXtq9H9fMEGNK7ZIuewRLbpJufa9OhVlU41qT8YMI5HJpebSIc6ex1Bj6_5pMW09Hu8PW6zLNEb8ok-2oDR-pdvEehhFbyUMOij2GauKpmxpCRvJ5g68Uaw2MB2gSQ1AAiL0TaCR0_x0wpg273OXeLTzlU1ScQDo1YKRFlzALlUIkEYdeJrrlo38op8S3rKEVDzCBdWcqVWcSNY3TeD3K7mv5bziTkTEMeYr')">
+              </div>
+              <div
+                class="absolute inset-0 bg-on-surface/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-center justify-center gap-3 text-on-primary">
+                <span class="flex items-center gap-1 font-label-md text-label-md"><span
+                    class="material-symbols-outlined text-sm">favorite</span> 289</span>
+                <span class="flex items-center gap-1 font-label-md text-label-md"><span
+                    class="material-symbols-outlined text-sm">chat_bubble</span> 34</span>
+              </div>
+            </a>
+            <!-- Post 3 -->
+            <a class="group relative rounded-xl overflow-hidden aspect-square shadow-sm bg-surface-container-low"
+              href="https://www.instagram.com/superalem1/" rel="noopener noreferrer" target="_blank">
+              <div class="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-110"
+                data-alt="Argentine butcher counter showcasing prime quality asado cuts with decorative promotional graphic frame."
+                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDvusAPgP-EbaM0QEF-rxcFa4YPi3ru0SenjzHfFeVzRQKIKfbVXzi_u72m5_-YxYw6CDhDsPEBNb2FhxLDyR1Nkig5rQSIWX7Fr4HvvuoBhTwFD_VwC65hc4G0yUC7W9Nzh5-i5IOjQQ-zXBEE6q828z4BJ9aue0Sb0QPhf8DJeSBC21iBSd66VVubviIoAE4gz56ZUlKs-BWMkPsT2aYtAg6gf-GRyEGweivTWML34tPalWn8EVZ0')">
+              </div>
+              <div
+                class="absolute inset-0 bg-on-surface/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-center justify-center gap-3 text-on-primary">
+                <span class="flex items-center gap-1 font-label-md text-label-md"><span
+                    class="material-symbols-outlined text-sm">favorite</span> 310</span>
+                <span class="flex items-center gap-1 font-label-md text-label-md"><span
+                    class="material-symbols-outlined text-sm">chat_bubble</span> 42</span>
+              </div>
+            </a>
+            <!-- Post 4 -->
+            <a class="group relative rounded-xl overflow-hidden aspect-square shadow-sm bg-surface-container-low"
+              href="https://www.instagram.com/superalem1/" rel="noopener noreferrer" target="_blank">
+              <div class="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-110"
+                data-alt="Customer smiling while choosing dairy cheeses in clean supermarket refrigerated section, warm daylight."
+                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCyl65chq8gK_4q0H66a12z7IwEh7U7sw7xW8rw8BJ71uVkco2lD6F8drpBFypU-D19ngVZKA-Vlha_GQsGDXWyrbwsguWkZS2wCI-ul_coI6qtaFn0IWQwLYVNe607VwHbZmTMoiOMGf0n2u3_O6Yghw8LIhMM01CgjXG3yJRmPDGlbY339X-vHATUMW10aEVho0gVubMs93f7ILTyD8N5RjuYE28o4djneklxgCFLlcpfmEie3POZ')">
+              </div>
+              <div
+                class="absolute inset-0 bg-on-surface/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-center justify-center gap-3 text-on-primary">
+                <span class="flex items-center gap-1 font-label-md text-label-md"><span
+                    class="material-symbols-outlined text-sm">favorite</span> 198</span>
+                <span class="flex items-center gap-1 font-label-md text-label-md"><span
+                    class="material-symbols-outlined text-sm">chat_bubble</span> 15</span>
+              </div>
+            </a>
+            <!-- Post 5 -->
+            <a class="group relative rounded-xl overflow-hidden aspect-square shadow-sm bg-surface-container-low"
+              href="https://www.instagram.com/superalem1/" rel="noopener noreferrer" target="_blank">
+              <div class="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-110"
+                data-alt="Wine bottles assortment in wooden crates with special discount tags highlighted in supermarket promo campaign."
+                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBk4ArU3faYUUuiR26dSUL1Ew8AqcabGSwOqnRtJYj7NHjIuBjInG8O3PjjlSF_uHLzszwNmcXdFw9LC-b5MoBiiy6PbQcLZaFW5fsAriJvotuXmRBnd-nIuLr4pmeXne-XPfopivZf5LwExwVdQYBoXsuGW5KYvUQ-PXLaqkIFx_Yf9pJmVPilGVk2w84JX5Gh396v-vI7YK_nOn9oF591kB1lOURAZGInebJFkiy810gqZzfyOD4f')">
+              </div>
+              <div
+                class="absolute inset-0 bg-on-surface/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-center justify-center gap-3 text-on-primary">
+                <span class="flex items-center gap-1 font-label-md text-label-md"><span
+                    class="material-symbols-outlined text-sm">favorite</span> 245</span>
+                <span class="flex items-center gap-1 font-label-md text-label-md"><span
+                    class="material-symbols-outlined text-sm">chat_bubble</span> 22</span>
+              </div>
+            </a>
+            <!-- Post 6 -->
+            <a class="group relative rounded-xl overflow-hidden aspect-square shadow-sm bg-surface-container-low"
+              href="https://www.instagram.com/superalem1/" rel="noopener noreferrer" target="_blank">
+              <div class="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-110"
+                data-alt="Supermarket grocery cart full of fresh colorful healthy products standing near storefront entrance."
+                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAzQ1OXr7BaJT2VffPo4OtrBRgVGFEPam1ENrN1vDbPQIEGTEvcq1POBh0Nr7mNRPupvTLCyfK7oqr2cADdhgiMIiG46QhasTElXj7NZ45hmI0xn5clC4K5Np_FUWqUjOXHzqdRahO_j6_L6N_L_5SJt5lZBTjSeo6BtUGuk4fc-lKISzSoHzdMf87e-FRB7pnCGpGQNwM5dK8FM4JxR9RrXy97XzdJvlBqZB_4j5Ts9mh2VX90O3E6')">
+              </div>
+              <div
+                class="absolute inset-0 bg-on-surface/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-center justify-center gap-3 text-on-primary">
+                <span class="flex items-center gap-1 font-label-md text-label-md"><span
+                    class="material-symbols-outlined text-sm">favorite</span> 412</span>
+                <span class="flex items-center gap-1 font-label-md text-label-md"><span
+                    class="material-symbols-outlined text-sm">chat_bubble</span> 51</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- 7. SECCIÓN UBICACIÓN Y HORARIOS (ID: "ubicacion") -->
+      <section class="w-full py-20 bg-surface-container-lowest" id="ubicacion">
+        <div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin flex flex-col gap-space-xl">
+          <!-- Section Header -->
+          <div class="space-y-space-xs max-w-2xl">
+            <span class="font-label-tag text-label-tag text-primary uppercase tracking-widest font-extrabold">Ubicación
+              y Sucursales</span>
+            <h2 class="font-headline-xl text-headline-xl text-on-surface">Vení a visitarnos</h2>
+            <p class="font-body-lg text-body-lg text-on-surface-variant">Estamos ubicados estratégicamente para que tu
+              visita sea cómoda y rápida.</p>
+          </div>
+          <!-- 2 Columns Layout -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-stretch">
+            <!-- Left Column: Information Cards -->
+            <div
+              class="lg:col-span-5 flex flex-col justify-between gap-space-md p-space-lg bg-surface-container-low rounded-2xl shadow-sm">
+              <div class="space-y-space-md">
+                <!-- Address Unit -->
+                <div class="flex items-start gap-space-md p-space-md bg-surface-container-lowest rounded-xl shadow-sm">
+                  <div
+                    class="w-12 h-12 rounded-lg bg-primary-fixed text-primary-container flex items-center justify-center shrink-0">
+                    <span class="material-symbols-outlined text-2xl">location_on</span>
+                  </div>
+                  <div class="space-y-1">
+                    <span class="font-label-tag text-label-tag text-on-surface-variant uppercase">Dirección</span>
+                    <p class="font-headline-sm text-headline-sm text-on-surface">[INSERTAR DIRECCIÓN REAL]</p>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant">Fácil acceso y comodidad para tus
+                      compras diarias.</p>
+                  </div>
+                </div>
+                <!-- Schedule Unit -->
+                <div class="flex items-start gap-space-md p-space-md bg-surface-container-lowest rounded-xl shadow-sm">
+                  <div
+                    class="w-12 h-12 rounded-lg bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shrink-0">
+                    <span class="material-symbols-outlined text-2xl">schedule</span>
+                  </div>
+                  <div class="space-y-1">
+                    <span class="font-label-tag text-label-tag text-on-surface-variant uppercase">Horarios de
+                      Atención</span>
+                    <p class="font-headline-sm text-headline-sm text-on-surface">[INSERTAR HORARIOS REALES]</p>
+                    <div class="text-on-surface-variant font-body-sm text-body-sm space-y-0.5">
+                      <p>Lunes a Sábados: Horario corrido</p>
+                      <p>Domingos y Feriados: Consultar horarios especiales</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Phone Unit -->
+                <div class="flex items-start gap-space-md p-space-md bg-surface-container-lowest rounded-xl shadow-sm">
+                  <div
+                    class="w-12 h-12 rounded-lg bg-tertiary-fixed text-tertiary flex items-center justify-center shrink-0">
+                    <span class="material-symbols-outlined text-2xl">call</span>
+                  </div>
+                  <div class="space-y-1">
+                    <span class="font-label-tag text-label-tag text-on-surface-variant uppercase">Teléfono y
+                      Consultas</span>
+                    <p class="font-headline-sm text-headline-sm text-on-surface">[INSERTAR TELÉFONO REAL]</p>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant">Línea de atención directa para pedidos
+                      y consultas.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Direct Maps Action -->
+              <div class="pt-space-sm">
+                <a class="w-full py-3.5 px-6 rounded-lg bg-primary-container text-on-primary font-label-lg text-label-lg shadow-md hover:bg-primary transition-all flex items-center justify-center gap-2"
+                  href="https://maps.google.com" rel="noopener noreferrer" target="_blank">
+                  <span class="material-symbols-outlined">directions</span>
+                  Cómo llegar
+                </a>
+              </div>
+            </div>
+            <!-- Right Column: Interactive Styled Map View -->
+            <div
+              class="lg:col-span-7 flex flex-col min-h-[380px] lg:min-h-[460px] relative rounded-2xl overflow-hidden shadow-md">
+              <div class="w-full h-full bg-cover bg-center flex-1"
+                data-location="Supermercado Alem [INSERTAR DIRECCIÓN REAL]" style=""></div>
+              <!-- Map Overlay Floating Badge -->
+              <div
+                class="absolute bottom-6 left-6 right-6 sm:right-auto bg-surface-container-lowest/95 backdrop-blur-md p-space-md rounded-xl shadow-lg flex items-center justify-between gap-space-md">
+                <div class="flex items-center gap-3">
+                  <div
+                    class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center shrink-0">
+                    <span class="material-symbols-outlined text-xl">store</span>
+                  </div>
+                  <div>
+                    <p class="font-label-lg text-label-lg text-on-surface">Supermercado Alem</p>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant">[INSERTAR DIRECCIÓN REAL]</p>
+                  </div>
+                </div>
+                <a class="inline-flex items-center gap-1 px-4 py-2 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-primary-container hover:text-on-primary transition-colors shrink-0"
+                  href="https://maps.google.com" rel="noopener noreferrer" target="_blank">
+                  <span>Abrir Mapa</span>
+                  <span class="material-symbols-outlined text-sm">open_in_new</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 8. SECCIÓN CONTACTO / CTA FINAL (ID: "contacto") -->
+      <section class="w-full py-24 bg-primary-container text-on-primary relative overflow-hidden" id="contacto">
+        <!-- Atmospheric Brand Shapes -->
+        <div
+          class="absolute -right-24 -top-24 w-96 h-96 rounded-full bg-primary opacity-50 blur-3xl pointer-events-none">
+        </div>
+        <div
+          class="absolute -left-24 -bottom-24 w-96 h-96 rounded-full bg-surface-tint opacity-30 blur-3xl pointer-events-none">
+        </div>
+        <div
+          class="relative z-10 max-w-5xl mx-auto px-margin-mobile lg:px-margin text-center flex flex-col items-center gap-space-lg">
+          <!-- Central Brand Logo -->
+          <div class="p-3 bg-surface-container-lowest rounded-2xl shadow-xl">
+            <img alt="Logo Alem" class="h-16 w-16 object-contain"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCX8bQkq8A64zAtZRt31kdmxlXTHFjvgGP3DaQGH8-1fHuns7ViYKGc-R5ZhSdAct9vvpNsxRQT8gO26ubORowefnWy8N4UhEzcidQ80vR-xuoLlj8VSF6aFLntynPpBB2Pe-R5Jzxycm9g7zRhu9TO_PEDuxXI4DgIuN5JxfwbxP5TFqyGAyEs2Dhr5Vu4-MtoTTSrrNvhhxyr54mUgZ2p73ArVwE3_krYLcTPLr0bgOKqTGTBHCGBMEh1rEapr3VHew" />
+          </div>
+          <div class="space-y-space-xs max-w-2xl">
+            <h2 class="font-display-lg text-display-lg font-extrabold tracking-tight">¿Listo para hacer tus compras?
+            </h2>
+            <p class="font-headline-md text-headline-md text-on-primary-container">Encontrá todo lo que necesitás en
+              Supermercado Alem.</p>
+          </div>
+          <!-- 3 Impactful Action Buttons -->
+          <div class="flex flex-wrap items-center justify-center gap-space-md pt-space-xs w-full max-w-3xl">
+            <!-- Button 1: Cómo llegar (White with red text) -->
+            <a class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-surface-container-lowest text-primary-container font-headline-sm text-headline-sm shadow-xl hover:bg-surface-container-low transition-all duration-200 hover:scale-105 active:scale-100 flex-1 sm:flex-initial min-w-[200px]"
+              href="#ubicacion">
+              <span class="material-symbols-outlined text-2xl">place</span>
+              Cómo llegar
+            </a>
+            <!-- Button 2: Seguinos en Instagram (White Outline) -->
+            <a class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-primary text-on-primary font-headline-sm text-headline-sm shadow-lg hover:bg-on-surface hover:text-surface-container-lowest transition-all duration-200 hover:scale-105 active:scale-100 flex-1 sm:flex-initial min-w-[200px]"
+              href="https://www.instagram.com/superalem1/" rel="noopener noreferrer" target="_blank">
+              <svg class="w-6 h-6 fill-current" viewbox="0 0 24 24">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.13-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z">
+                </path>
+              </svg>
+              Seguinos en Instagram
+            </a>
+            <!-- Button 3: WhatsApp Action -->
+            <a class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-tertiary-container text-on-tertiary font-headline-sm text-headline-sm shadow-xl hover:bg-tertiary transition-all duration-200 hover:scale-105 active:scale-100 flex-1 sm:flex-initial min-w-[200px]"
+              href="https://wa.me/543517720046?text=hola%20negro"
+              rel="noopener noreferrer" target="_blank">
+              <img alt="WhatsApp" class="w-7 h-7 object-contain" src="whatsapp.svg" />
+              Contactanos por WhatsApp
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <aside class="fixed bottom-6 right-6 z-50 group">
+    <div
+      class="absolute right-full mr-3 top-1/2 -translate-y-1/2 hidden md:group-hover:flex items-center bg-inverse-surface text-inverse-on-surface font-label-md text-label-md px-space-md py-space-xs rounded-lg shadow-lg whitespace-nowrap pointer-events-none transition-all duration-200 opacity-0 group-hover:opacity-100">
+      ¿Dudas? Escribinos</div><a aria-label="Contactar por WhatsApp"
+      class="flex items-center justify-center w-14 h-14 hover:scale-110 active:scale-95 transition-all duration-200 focus:outline-none drop-shadow-xl"
+      href="https://wa.me/543517720046?text=hola%20negro" rel="noopener noreferrer" target="_blank">
+      <img alt="WhatsApp" class="w-14 h-14 object-contain" src="whatsapp.svg" />
+    </a>
+  </aside>
+  <footer class="w-full bg-surface-container-low text-on-surface-variant">
+    <div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin pt-space-xl pb-space-lg">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg mb-space-xl">
+        <div class="space-y-space-md">
+          <div class="flex items-center gap-space-sm"><img alt="Supermercado Alem" class="h-12 w-auto object-contain"
+              src="https://lh3.googleusercontent.com/aida/AEtjO1V0ZKUQxPFO1rACtlSdZzPWXXc09dIUUL8Yg2CkD4GJn4AVBb4959u3t_JduOe8Ew1pjuEWL_iqWXOf3hbLjgUPpP6dNc0BzQMkFXNKKI5Qk78WfXNnPjWTYqDDGZS3fgHH-7fGplqgdtbMzsqRJC-IllOSTxhHIpwT96gy2ycbqAAss5ZjN0fz6lbBgfzN598heNJkCZiUy0MvNN4e5e8KxJAOfHgkEjVq-4LTrMFNPFZDDb4MPo0FDBNj2QlGHJ6LmfR7Z6wSWQ" /><span
+              class="font-headline-sm text-headline-sm uppercase tracking-tight text-primary">Alem</span></div>
+          <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Supermercado Alem - Calidad,
+            variedad y ofertas para que tus compras rindan más.</p>
+          <div class="flex items-center gap-space-sm pt-space-xs"><a
+              class="flex items-center justify-center w-10 h-10 rounded-full bg-surface-container-high text-on-surface hover:bg-primary hover:text-on-primary transition-all duration-200"
+              href="https://instagram.com/superalem1" rel="noopener noreferrer" target="_blank"><span
+                class="material-symbols-outlined text-headline-sm">photo_camera</span></a><a
+              class="flex items-center justify-center w-10 h-10 rounded-full bg-surface-container-high hover:bg-surface-container-highest transition-all duration-200"
+              href="https://wa.me/543517720046?text=hola%20negro" rel="noopener noreferrer" target="_blank" aria-label="WhatsApp"><img alt="WhatsApp" class="w-6 h-6 object-contain" src="whatsapp.svg" /></a></div>
+        </div>
+        <div>
+          <h4 class="font-headline-sm text-headline-sm text-on-surface mb-space-md">Navegación</h4>
+          <ul class="space-y-space-xs font-body-md text-body-md">
+            <li class="py-0.5"><a class="hover:text-primary transition-colors" href="#hero">Inicio</a></li>
+            <li class="py-0.5"><a class="hover:text-primary transition-colors" href="#ofertas">Ofertas Semanales</a>
+            </li>
+            <li class="py-0.5"><a class="hover:text-primary transition-colors" href="#categorias">Departamentos y
+                Rubros</a></li>
+            <li class="py-0.5"><a class="hover:text-primary transition-colors" href="#nosotros">Sobre Nosotros</a></li>
+            <li class="py-0.5"><a class="hover:text-primary transition-colors" href="#ubicacion">Sucursales y Mapa</a>
+            </li>
+            <li class="py-0.5"><a class="hover:text-primary transition-colors" href="#contacto">Atención al Cliente</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-headline-sm text-headline-sm text-on-surface mb-space-md">Canales y Atención</h4>
+          <ul class="space-y-space-sm font-body-md text-body-md">
+            <li class="flex items-start gap-space-xs"><img alt="WhatsApp" class="w-5 h-5 mt-0.5 object-contain shrink-0" src="whatsapp.svg" /><span>WhatsApp: <a
+                  class="hover:text-primary font-label-md text-label-md block text-on-surface"
+                  href="https://wa.me/543517720046?text=hola%20negro" rel="noopener noreferrer" target="_blank">+54 351 772-0046</a></span></li>
+            <li class="flex items-start gap-space-xs"><span
+                class="material-symbols-outlined text-primary mt-0.5">photo_camera</span><span>Instagram: <a
+                  class="hover:text-primary font-label-md text-label-md block text-on-surface"
+                  href="https://instagram.com/superalem1" rel="noopener noreferrer"
+                  target="_blank">@superalem1</a></span></li>
+            <li class="flex items-start gap-space-xs"><span
+                class="material-symbols-outlined text-primary mt-0.5">mail</span><span>Consultas generales:<span
+                  class="font-label-md text-label-md block text-on-surface">contacto@superalem.com.ar</span></span></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-headline-sm text-headline-sm text-on-surface mb-space-md">Visitanos</h4>
+          <ul class="space-y-space-sm font-body-md text-body-md">
+            <li class="flex items-start gap-space-xs"><span
+                class="material-symbols-outlined text-primary mt-0.5">location_on</span>
+              <div>
+                <p class="font-label-lg text-label-lg text-on-surface">Sucursal Principal</p>
+                <p class="text-on-surface-variant font-body-sm text-body-sm">Av. Leandro N. Alem 1250, Buenos Aires</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-space-xs"><span
+                class="material-symbols-outlined text-primary mt-0.5">schedule</span>
+              <div>
+                <p class="font-label-lg text-label-lg text-on-surface">Horarios de Atención</p>
+                <p class="text-on-surface-variant font-body-sm text-body-sm">Lunes a Sábados: 08:30 a 20:30 hs</p>
+                <p class="text-on-surface-variant font-body-sm text-body-sm">Domingos: 09:00 a 13:30 hs</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-sm font-body-sm text-body-sm text-on-surface-variant">
+        <p>© 2026 Supermercado Alem. Todos los derechos reservados.</p>
+        <div class="flex gap-space-md"><a class="hover:text-primary transition-colors" href="#">Términos y
+            Condiciones</a><a class="hover:text-primary transition-colors" href="#">Política de Privacidad</a><a
+            class="hover:text-primary transition-colors" href="#">Defensa del Consumidor</a></div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
